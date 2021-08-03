@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    color: white;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #0C1420;
+    display: flex;
+    justify-content: space-around;
+}
+.text-logo{
+    color:  #3A68B8;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.header-links{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}
+.button-header-link{
+    background-color:  #3A68B8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 35px;
+}
+.container-button-header{
+    display: flex;
+    align-items: center;
+}
+h4, h5{
+    color: #3A68B8;
+}
+.link{
+    font-weight: 400;
+}
+main{
+    background-color: #08101D;
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.wrapper-main{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3em;
+    align-items: center;
+}
+.information-title{
+    padding-bottom: 15px;
+}
+.card-main{
+    width: 445px;
+}
+.title-main{
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+.description-main{
+    font-weight: 100;
+    font-family:  'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.btns-list-main{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.watch-video{
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3A68B8;
+}
+.btns-main{
+    color: white;
+}
+.get-started{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3A68B8;
+    margin-right: 15px;
+}
+.img-main{
+    width:  450px;
+    height: auto;
+}
+.acide{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+section{
+    background:  #020A18;
+    height: auto;
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+.img-section{
+    width: 500px;
+    height: auto;
+}
+.wrapper-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 90px;
+    margin-left: 90px;
+    padding-top:60px;
+    padding-bottom: 80px;
+}
+.card-section{
+    width: 400px;
+}
+.title-section{
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+.description-section{
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.btn-section{
+    padding-top: 20px;
+}
+.learn-more{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3A68B8;
+}
+.cards-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card{
+    width: 300px;
+    min-width: 300px;;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(15, 23, 36, 4);
+    border-radius: 10px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.img-card{
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.title-card{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.btns-carusel{
+    text-align: center;
+}
+.wrapper-section:last-child{
+    display: flex;
+    justify-content: space-around;
+}
+.card-description{
+    width: 460px;
+}
+.wrapper-description{
+    width: 380px;
+}
+.img-card-description{
+    width: 450px;
+    height: auto;
+}
+footer{
+    background-color:#0C1420;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 30px;
+}
+li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.contacts{
+    display: flex;
+}
+.btns-footer{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(197, 197, 197);
+}
+.title-card-footer{
+    color: white;
+    margin-bottom: 25px;
+}
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+ul{
+    padding: 0;
+}
+.card-footer{
+    width: 160px;
+}
+.card-footer:nth-child(1){
+    margin-right: 100px;
+}
+.card-footer:last-child{
+    margin-left: 100px;
+}
+.description-footer{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(197, 197, 197);
+    padding-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a class="text-logo" href="#">
+                <div>
+                    <img src="https://svgshare.com/i/Znj.svg" width="35" height="35" alt="">
+                </div>
+                <div>
+                    <h4>Artificial Intelligence</h4>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="header-links">
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#">About</a>
+            <a class="link" href="#">Services</a>
+            <a class="link" href="#">Blog</a>
+            <a class="link" href="#">Contact</a>
+        </div>
+
+
+        <div class="container-button-header">
+            <a class="button-header-link" href="#">Sign in</a>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="wrapper-main">
+            <div class="card-main">
+                <h5 class="information-title uppercase">NEXT GENERATION PLATFORM</h5>
+                <h1 class="title-main">Artificial intelligence & Syber security</h1>
+                <p class="description-main">
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+                <div class="btns-list-main">
+                    <a class="get-started" href="#"><h5 class="btns-main">Get Started</h5></a>
+
+                    
+                    <a class="watch-video" href="#">
+                        <div class="icon-play">
+                            <img src="./icons/play.svg" width="15" height="15" alt="">
+                        </div>
+                        <div>
+                            <h5 class="btns-main">Watch Video</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="conteiner-img-main">
+                <img class="img-main" src="https://i.ibb.co/yYkH31s/main.png" alt="">
+            </div>
+        </div>
+
+        <div class="acide">
+            <img src="https://i.ibb.co/LrpLb2z/p1.png" height="45" alt="">
+            <img src="https://i.ibb.co/qyWY4Cy/p2.png" height="45" alt="">
+            <img src="https://i.ibb.co/HGK7jDp/p3.png" height="45" alt="">
+            <img src="https://i.ibb.co/Kz9Wp2d/p4.png" height="45" alt="">
+        </div>
+    </main>
+
+
+    <section>
+        <div class="wrapper-section">
+            <div>
+                <img class="img-section" src="https://i.ibb.co/hY8CRpx/section-img.png" alt="">
+            </div>
+            <div class="card-section">
+                <h1 class="title-section">Apply AI, Deep Learning and Data Sciece to solve</h1>
+                <p class="description-section">
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+                <div class="btn-section">
+                    <a class="learn-more" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cards-list">
+
+            <!-- 1 -->
+            <div class="card">
+                <img class="img-card" src="./icons/i1.png" width="57" height="59" alt="">
+                <h2 class="title-card">Naxly as the Winners in Global Agency Awards</h2>
+                <p class="description-section center">
+                    Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+            </div>
+
+            <!-- 2 -->
+            <div class="card">
+                <img class="img-card" src="./icons/i2.png" width="57" height="59" alt="">
+                <h2 class="title-card">Expert Prespective Agency Awards</h2>
+                <p class="description-section center">
+                    Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+            </div>
+
+            <!-- 3 -->
+            <div class="card">
+                <img class="img-card" src="./icons/i3.png" width="57" height="59" alt="">
+                <h2 class="title-card">Business Prespective Global Agency Awards</h2>
+                <p class="description-section center">
+                    Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="card">
+                <img class="img-card" src="./icons/i4.png" width="57" height="59" alt="">
+                <h2 class="title-card">Value for Results in Global Agency Awards</h2>
+                <p class="description-section center">
+                    Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="btns-carusel">
+            <a href="#"><img src="http://svgur.com/i/Zmv.svg" width="7" height="7" alt=""></a>
+            <a href="#"><img src="http://svgur.com/i/ZnB.svg"  width="7" height="7"  alt=""></a>
+            <a href="#"><img src="http://svgur.com/i/Zmv.svg" width="7" height="7" alt=""></a>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper-section">
+            <div class="card-description">
+                <h2 class="title-section">What our clients say about our awesome solutions</h2>
+                <div class="wrapper-description">
+                    <p class="description-section">
+                        To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it who do not know.
+                    </p>
+                    <p class="description-section">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing .
+                    </p>
+                    <p class="description-section">
+                        Lorem ipsum is placeholder previewing layouts and visual mockups.
+                    </p>
+                    <p class="description-section">
+                        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="conteiner-img-description">
+                <img class="img-card-description" src="https://i.ibb.co/WVdt8y6/card-sect.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="card-footer">
+            <img src="https://svgshare.com/i/Znj.svg" width="35" height="35" alt="logo">
+            <h4>Artificial Intelligence</h4>
+            <p class="description-footer">
+                Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.
+            </p>
+            <div>
+
+                <!-- mail -->
+                <a class="mail contacts" href="#">
+                    <div>
+                        <img src="http://svgur.com/i/Zkd.svg" width="14" height="14" alt="">
+                    </div>
+                    <div>
+                        <h5 class="btns-main" style="margin-left: 5px;">Company@gmail.com.com</h5>
+                    </div>
+                </a>
+
+
+                <!-- number -->
+                <a class="phone contacts" href="#">
+                    <div>
+                        <img src="http://svgur.com/i/ZkR.svg" width="14" height="14" alt="">
+                    </div>
+                    <div>
+                        <h5 class="btns-main" style="margin-left: 5px;">+51(064) 332-1233</h5>
+                    </div>
+                </a>
+
+
+                <!-- geo -->
+                <a class="geo contacts" href="#">
+                    <div>
+                        <img src="http://svgur.com/i/ZnZ.svg" width="14" height="14" alt="">
+                    </div>
+                    <div>
+                        <h5 class="btns-main" style="margin-left: 5px;">450 Wall Street, USA, New York</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+            <div class="card-footer">
+                <h4 class="title-card-footer">Information</h4>
+                <div>
+                    <ul>
+                        <li><a class="btns-footer" href="#">New Collection</a></li>
+                        <li><a class="btns-footer" href="#">About Store</a></li>
+                        <li><a class="btns-footer" href="#">Contact Us</a></li>
+                        <li><a class="btns-footer" href="#">Latest News</a></li>
+                        <li><a class="btns-footer" href="#">Our Sitemap</a></li>
+                        <li><a class="btns-footer" href="#">Orders History</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card-footer">
+                <h4 class="title-card-footer">FOOTER MENU</h4>
+                <div>
+                    <ul>
+                        <li><a class="btns-footer" href="#">Instagram profile</a></li>
+                        <li><a class="btns-footer" href="#">New Collection</a></li>
+                        <li><a class="btns-footer" href="#">Contact Us</a></li>
+                        <li><a class="btns-footer" href="#">Latest News</a></li>
+                        <li><a class="btns-footer" href="#">Terms & Conditions</a></li>
+                        <li><a class="btns-footer" href="#">Purchase Theme</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <h4 class="title-card-footer">USEFUL LINKS</h4>
+                <div>
+                    <ul>
+                            <li><a class="btns-footer" href="#">Instagram profile</a></li>
+                            <li><a class="btns-footer" href="#">New Collection</a></li>
+                            <li><a class="btns-footer" href="#">Contact Us</a></li>
+                            <li><a class="btns-footer" href="#">Latest News</a></li>
+                            <li><a class="btns-footer" href="#">Terms & Conditions</a></li>
+                            <li><a class="btns-footer" href="#">Purchase Theme</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        <div class="card-footer">
+            <h4 class="title-card-footer">ABOUT THE STORE</h4>
+            <p class="description-footer">
+                Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.
+            </p>
+            <a href="#">www.company.com</a>
+            <div class="about-us">
+                <img src="http://svgur.com/i/ZnY.svg" alt="">
+                <img src="http://svgur.com/i/Zkz.svg" alt="">
+                <img src="http://svgur.com/i/Zm0.svg" alt="">
+                <img src="http://svgur.com/i/ZmV.svg" alt="">
+                <img src="http://svgur.com/i/ZkQ.svg" alt="">
+            </div>
+            <a class="contacts" href="#">
+                <div>
+                    <img src="http://svgur.com/i/ZmW.svg" width="14" height="14" alt="">
+                </div>
+                <div>
+                    <h5 class="btns-main" style="margin-left: 5px;">English</h5>
+                </div>
+                <div>
+                    <img src="http://svgur.com/i/Zmu.svg" style="margin-right: 10px;" alt="">
+                </div>
+            </a>
+        </div>
+
+    </footer>
+</body>
+</html>
